@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitality Hub | Your Gateway to Healthy Living</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4ade80',
+                        secondary: '#3b82f6',
+                        accent: '#f59e0b',
+                        dark: '#1e293b',
+                        light: '#f8fafc'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(74, 222, 128, 0.1) 0%, rgba(59, 130, 246, 0.1) 100%);
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .testimonial-card {
+            background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+        }
+        .smooth-scroll {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="font-sans bg-light text-dark smooth-scroll">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <div class="text-2xl font-bold text-primary">
+                        <span class="text-secondary">Vitality</span>Hub
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-dark hover:text-primary transition">Home</a>
+                    <a href="#products" class="text-dark hover:text-primary transition">Products</a>
+                    <a href="#blog" class="text-dark hover:text-primary transition">Blog</a>
+                    <a href="#about" class="text-dark hover:text-primary transition">About</a>
+                    <a href="#contact" class="text-dark hover:text-primary transition">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <svg class="w-6 h-6 text-dark" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile menu -->
+            <div class="mobile-menu hidden md:hidden">
+                <a href="#home" class="block py-2 px-4 text-sm hover:bg-gray-100">Home</a>
+                <a href="#products" class="block py-2 px-4 text-sm hover:bg-gray-100">Products</a>
+                <a href="#blog" class="block py-2 px-4 text-sm hover:bg-gray-100">Blog</a>
+                <a href="#about" class="block py-2 px-4 text-sm hover:bg-gray-100">About</a>
+                <a href="#contact" class="block py-2 px-4 text-sm hover:bg-gray-100">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient py-20">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">
+                        Discover Your Path to <span class="text-primary">Optimal Health</span>
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-8">
+                        We've curated the best health products and resources to help you live your healthiest life. Start your wellness journey today!
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#products" class="bg-primary hover:bg-green-500 text-white font-bold py-3 px-6 rounded-lg transition duration-300">
+                            Explore Products
+                        </a>
+                        <a href="#blog" class="bg-white hover:bg-gray-100 text-dark font-bold py-3 px-6 rounded-lg border border-gray-200 transition duration-300">
+                            Read Our Blog
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1080&q=80" alt="Healthy lifestyle" class="rounded-lg shadow-xl w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="products" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Our <span class="text-primary">Featured</span> Products</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Carefully selected health products that we personally recommend and use. Each purchase through our links supports our mission.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1595658658484-df3e72f1b1a3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Organic Protein Powder" class="w-full h-64 object-cover">
+                        <div class="absolute top-2 right-2 bg-primary text-white text-xs font-bold px-2 py-1 rounded">
+                            Best Seller
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Plant-Based Protein Powder</h3>
+                        <p class="text-gray-600 mb-4">Organic, vegan protein with all essential amino acids for muscle recovery and energy.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-primary">$29.99</span>
+                            <a href="#" class="bg-secondary hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition duration-300">
+                                Buy Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Turmeric Supplement" class="w-full h-64 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Turmeric & Ginger Complex</h3>
+                        <p class="text-gray-600 mb-4">Powerful anti-inflammatory supplement with black pepper for enhanced absorption.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-primary">$24.99</span>
+                            <a href="#" class="bg-secondary hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition duration-300">
+                                Buy Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Collagen Peptides" class="w-full h-64 object-cover">
+                        <div class="absolute top-2 right-2 bg-accent text-white text-xs font-bold px-2 py-1 rounded">
+                            New
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Grass-Fed Collagen Peptides</h3>
+                        <p class="text-gray-600 mb-4">Supports skin elasticity, joint health, and gut integrity with type I & III collagen.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-primary">$34.99</span>
+                            <a href="#" class="bg-secondary hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition duration-300">
+                                Buy Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-dark hover:bg-gray-800 text-white font-bold py-3 px-8 rounded-lg transition duration-300">
+                    View All Products
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">What Our <span class="text-primary">Community</span> Says</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Real results from people who've used the products we recommend.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-gray-300 overflow-hidden">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah J." class="w-full h-full object-cover">
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold">Sarah J.</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">
+                        "The plant-based protein has been a game changer for my morning smoothies. I've noticed more energy throughout the day and better digestion."
+                    </p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-gray-300 overflow-hidden">
+                            <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Michael T." class="w-full h-full object-cover">
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold">Michael T.</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">
+                        "After using the turmeric complex for 3 months, my joint pain has significantly decreased. I'm able to stay active without discomfort."
+                    </p>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-gray-300 overflow-hidden">
+                            <img src="https://randomuser.me/api/portraits/women/63.jpg" alt="Lisa M." class="w-full h-full object-cover">
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold">Lisa M.</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">
+                        "I've been taking the collagen peptides for skin health and I can honestly say my complexion has never looked better at 45!"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Preview -->
+    <section id="blog" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Latest <span class="text-primary">Health</span> Articles</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Evidence-based health information to help you make informed decisions about your wellness.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Article 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9590a8ed4a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Healthy eating" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-2">
+                            <span>June 15, 2023</span>
+                            <span class="mx-2">•</span>
+                            <span>8 min read</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">The Ultimate Guide to Plant-Based Proteins</h3>
+                        <p class="text-gray-600 mb-4">
+                            Discover the best plant protein sources and how to combine them for complete amino acid profiles.
+                        </p>
+                        <a href="#" class="text-primary font-bold hover:text-green-600 transition">Read More →</a>
+                    </div>
+                </div>
+                
+                <!-- Article 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Turmeric" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-2">
+                            <span>May 28, 2023</span>
+                            <span class="mx-2">•</span>
+                            <span>6 min read</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Turmeric Benefits: Science-Backed Health Effects</h3>
+                        <p class="text-gray-600 mb-4">
+                            Learn about the powerful anti-inflammatory and antioxidant properties of this golden spice.
+                        </p>
+                        <a href="#" class="text-primary font-bold hover:text-green-600 transition">Read More →</a>
+                    </div>
+                </div>
+                
+                <!-- Article 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                    <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Sleep" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-2">
+                            <span>May 10, 2023</span>
+                            <span class="mx-2">•</span>
+                            <span>10 min read</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Optimizing Your Sleep: The Forgotten Health Pillar</h3>
+                        <p class="text-gray-600 mb-4">
+                            Why quality sleep is just as important as diet and exercise for overall health.
+                        </p>
+                        <a href="#" class="text-primary font-bold hover:text-green-600 transition">Read More →</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-dark hover:bg-gray-800 text-white font-bold py-3 px-8 rounded-lg transition duration-300">
+                    View All Articles
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-16 bg-primary bg-opacity-10">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-4">Join Our <span class="text-primary">Health</span> Community</h2>
+                <p class="text-gray-600 mb-8">
+                    Get exclusive health tips, product recommendations, and special offers delivered straight to your inbox.
+                </p>
+                <form class="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto">
+                    <input type="email" placeholder="Your email address" class="flex-grow px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                    <button type="submit" class="bg-primary hover:bg-green-500 text-white font-bold py-3 px-6 rounded-lg transition duration-300">
+                        Subscribe
+                    </button>
+                </form>
+                <p class="text-xs text-gray-500 mt-3">
+                    We respect your privacy. Unsubscribe at any time.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="About us" class="rounded-lg shadow-xl w-full">
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <h2 class="text-3xl font-bold mb-6">About <span class="text-primary">Vitality</span>Hub</h2>
+                    <p class="text-gray-600 mb-4">
+                        Founded in 2018, VitalityHub was born from our personal health journeys. After struggling to find reliable information and quality products, we decided to create a trusted resource for health-conscious individuals.
+                    </p>
+                    <p class="text-gray-600 mb-4">
+                        Our mission is to simplify health and wellness by providing carefully researched recommendations. We test every product we feature and only promote items we truly believe in.
+                    </p>
+                    <p class="text-gray-600 mb-6">
+                        As an affiliate site, we earn commissions on purchases made through our links. This allows us to continue providing free content while maintaining editorial independence.
+                    </p>
+                    <a href="#" class="inline-block bg-dark hover:bg-gray-800 text-white font-bold py-3 px-8 rounded-lg transition duration-300">
+                        Our Story
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Get In <span class="text-primary">Touch</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Have questions about our recommended products or health topics? We'd love to hear from you.
+                </p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="md:flex">
+                        <div class="md:w-1/2 bg-primary bg-opacity-10 p-8">
+                            <h3 class="text-xl font-bold mb-4">Contact Information</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-start">
+                                    <div class="flex-shrink-0 text-primary">
+                                        <i class="fas fa-map-marker-alt text-xl"></i>
+                                    </div>
+                                    <div class="ml-4">
+                                        <h4 class="font-bold">Address</h4>
+                                        <p class="text-gray-600">123 Wellness Way, Health City, HC 12345</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="flex-shrink-0 text-primary">
+                                        <i class="fas fa-envelope text-xl"></i>
+                                    </div>
+                                    <div class="ml-4">
+                                        <h4 class="font-bold">Email</h4>
+                                        <p class="text-gray-600">hello@vitalityhub.com</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="flex-shrink-0 text-primary">
+                                        <i class="fas fa-phone-alt text-xl"></i>
+                                    </div>
+                                    <div class="ml-4">
+                                        <h4 class="font-bold">Phone</h4>
+                                        <p class="text-gray-600">(123) 456-7890</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-8">
+                                <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+                                <div class="flex space-x-4">
+                                    <a href="#" class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-dark hover:bg-primary hover:text-white transition">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#" class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-dark hover:bg-primary hover:text-white transition">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="#" class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-dark hover:bg-primary hover:text-white transition">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a href="#" class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-dark hover:bg-primary hover:text-white transition">
+                                        <i class="fab fa-pinterest-p"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="md:w-1/2 p-8">
+                            <form>
+                                <div class="mb-4">
+                                    <label for="name" class="block text-gray-700 font-bold mb-2">Name</label>
+                                    <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                                </div>
+                                <div class="mb-4">
+                                    <label for="email" class="block text-gray-700 font-bold mb-2">Email</label>
+                                    <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                                </div>
+                                <div class="mb-4">
+                                    <label for="subject" class="block text-gray-700 font-bold mb-2">Subject</label>
+                                    <input type="text" id="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                                </div>
+                                <div class="mb-4">
+                                    <label for="message" class="block text-gray-700 font-bold mb-2">Message</label>
+                                    <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                                </div>
+                                <button type="submit" class="w-full bg-primary hover:bg-green-500 text-white font-bold py-3 px-6 rounded-lg transition duration-300">
+                                    Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">
+                        <span class="text-primary">Vitality</span>Hub
+                    </h3>
+                    <p class="text-gray-400">
+                        Your trusted source for health products and information. We're committed to helping you live your healthiest life.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="#products" class="text-gray-400 hover:text-white transition">Products</a></li>
+                        <li><a href="#blog" class="text-gray-400 hover:text-white transition">Blog</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition">About</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Categories</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Supplements</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Fitness</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Nutrition</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Mental Health</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Sleep</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Affiliate Disclosure</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">
+                    © 2023 VitalityHub. All rights reserved.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-pinterest-p"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile menu toggle script -->
+    <script>
+        const btn = document.querySelector('.mobile-menu-button');
+        const menu = document.querySelector('.mobile-menu');
+        
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+        
+        // Close mobile menu when clicking on a link
+        const menuLinks = document.querySelectorAll('.mobile-menu a');
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
+<p style="border-radius: 8px; text-align: center; font-size: 12px; color: #fff; margin-top: 16px;position: fixed; left: 8px; bottom: 8px; z-index: 10; background: rgba(0, 0, 0, 0.8); padding: 4px 8px;">Made with <img src="https://enzostvs-deepsite.hf.space/logo.svg" alt="DeepSite Logo" style="width: 16px; height: 16px; vertical-align: middle;display:inline-block;margin-right:3px;filter:brightness(0) invert(1);"><a href="https://enzostvs-deepsite.hf.space" style="color: #fff;text-decoration: underline;" target="_blank" >DeepSite</a> - 🧬 <a href="https://enzostvs-deepsite.hf.space?remix=Alexhuang1010/vitalityhub-site" style="color: #fff;text-decoration: underline;" target="_blank" >Remix</a></p></body>
+</html>
